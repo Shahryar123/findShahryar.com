@@ -2023,17 +2023,16 @@ content
 /* line 104, ../scss/_content.scss */
 .art-counter-frame .art-counter-box .art-counter {
   color: #ffc107;
-  font-weight: 600;
+  font-weight: 400;
   font-family: "Poppins", sans-serif;
-  font-size: 22px;
+  font-size: 35px;
 }
 /* line 111, ../scss/_content.scss */
 .art-counter-frame .art-counter-box .art-counter-plus {
-  margin-left: 3px;
   color: #ffc107;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 /* ----- services ----- */
