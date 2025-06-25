@@ -95,6 +95,10 @@ common
 @import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* ----- text defaults ----- */
 /* line 13, ../scss/_common.scss */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #8c8c8e;
   font-size: 12px;
@@ -150,7 +154,8 @@ h6 {
 /* ----- text config ----- */
 /* line 55, ../scss/_common.scss */
 .art-sm-text {
-  font-size: 11px;
+  color: white;
+  font-size: 12px;
 }
 
 /* line 59, ../scss/_common.scss */
@@ -324,14 +329,13 @@ link
 /* line 200, ../scss/_common.scss */
 .art-link {
   position: relative;
+  text-align: center;
   text-transform: uppercase;
   font-size: 10px;
   display: inline-block;
   letter-spacing: 1.5px;
   font-weight: 600;
-  margin-right: 15px;
-  margin-bottom: 10px;
-  color: #8c8c8e;
+  color: #ffffff;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
@@ -432,9 +436,9 @@ button
   text-transform: uppercase;
   -webkit-box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
   box-shadow: 0 1px 4px 0 rgba(15, 15, 20, 0.1);
-  color: #20202a;
-  background: linear-gradient(to left, #f5f4f2, #ebb412);
-  font-weight: 600;
+  color: white;
+  background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+  font-weight: bold;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -473,7 +477,7 @@ button
   -webkit-transform: translateY(-2px);
   transform: translateY(-7px);
   color:black;
-  background: linear-gradient(to left, #ebb412, #ebb412);
+  background: linear-gradient(to left, #f27121, #f27121);
 
 }
 
@@ -1124,7 +1128,7 @@ info bar
   top: 0;
   z-index: 99999;
   width: 100%;
-  padding: 30px;
+  padding: 11px;
   height: 235px;
   background: linear-gradient(
     159deg,
@@ -1376,9 +1380,15 @@ info bar
   transition: 0.4s ease-in-out;
 }
 /* line 199, ../scss/_info-bar.scss */
-.art-info-bar .art-name:hover a {
+.art-info-bar .art-name:hover a{
   color: #ffc107;
 }
+.art-skill-text {
+  color: #ffd044;
+  font-weight: 400;
+  font-size: 11px;
+ }
+
 /* line 205, ../scss/_info-bar.scss */
 .art-info-bar .art-lang-skills {
   display: -webkit-box;
@@ -1499,7 +1509,7 @@ info bar
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: center !important;
   padding: 0 35px;
   height: 50px;
   background: linear-gradient(
@@ -3583,7 +3593,12 @@ html.is-animating .fade-left {
   max-height: 100%;
   object-fit: contain;
 }
-
+.contact-title-icon {
+  width: auto;
+  height: 25px;
+  max-height: 100%;
+  object-fit: contain;
+}
 .services-heading{
   font-size: 14px;
   font-weight: 800;
@@ -3669,12 +3684,13 @@ html.is-animating .fade-left {
 .modal-right form button {
   width: 100%;
   padding: 10px;
-  background: linear-gradient(to right, #f6e1af, #ffc107);
+  background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
   border: none;
-  color: #000;
+  color: white;
   font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 15px;
 }
 
 /* Responsive for mobile */
@@ -3699,4 +3715,25 @@ html.is-animating .fade-left {
   .modal-right {
     padding: 20px;
   }
+}
+
+.gradient-heading-experience {
+  background: linear-gradient(90deg, orange, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.gradient-heading {
+  background: linear-gradient(90deg, #8a2387, #e94057, #f27121);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.gradient-heading .emoji {
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: initial;
+  color: inherit;
 }

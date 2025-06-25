@@ -75,7 +75,7 @@ $(function () {
     targets: ".art-counter-frame",
     opacity: [0, 1],
     duration: 800,
-    delay: 2300,
+    delay: 1100,
     easing: "linear",
   });
 
@@ -104,144 +104,144 @@ $(function () {
   });
 
   // progressbars
-  var bar = new ProgressBar.Circle(circleprog1, {
-    strokeWidth: 7,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 2500,
-    trailWidth: 7,
-    step: function (state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
-    },
-  });
+  // var bar = new ProgressBar.Circle(circleprog1, {
+  //   strokeWidth: 7,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 2500,
+  //   trailWidth: 7,
+  //   step: function (state, circle) {
+  //     var value = Math.round(circle.value() * 100);
+  //     if (value === 0) {
+  //       circle.setText("");
+  //     } else {
+  //       circle.setText(value);
+  //     }
+  //   },
+  // });
 
-  bar.animate(1);
+  // bar.animate(1);
 
-  var bar = new ProgressBar.Circle(circleprog2, {
-    strokeWidth: 7,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 2600,
-    trailWidth: 7,
-    step: function (state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
-    },
-  });
+  // var bar = new ProgressBar.Circle(circleprog2, {
+  //   strokeWidth: 7,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 2600,
+  //   trailWidth: 7,
+  //   step: function (state, circle) {
+  //     var value = Math.round(circle.value() * 100);
+  //     if (value === 0) {
+  //       circle.setText("");
+  //     } else {
+  //       circle.setText(value);
+  //     }
+  //   },
+  // });
 
-  bar.animate(0.9);
+  // bar.animate(0.9);
 
-  var bar = new ProgressBar.Circle(circleprog3, {
-    strokeWidth: 7,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 2700,
-    trailWidth: 7,
-    step: function (state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText("");
-      } else {
-        circle.setText(value);
-      }
-    },
-  });
+  // var bar = new ProgressBar.Circle(circleprog3, {
+  //   strokeWidth: 7,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 2700,
+  //   trailWidth: 7,
+  //   step: function (state, circle) {
+  //     var value = Math.round(circle.value() * 100);
+  //     if (value === 0) {
+  //       circle.setText("");
+  //     } else {
+  //       circle.setText(value);
+  //     }
+  //   },
+  // });
 
-  bar.animate(0.7);
+  // bar.animate(0.7);
 
-  var bar = new ProgressBar.Line(lineprog1, {
-    strokeWidth: 1.72,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 2800,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: "100%",
-      height: "100%",
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
-    },
-  });
+  // var bar = new ProgressBar.Line(lineprog1, {
+  //   strokeWidth: 1.72,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 2800,
+  //   trailWidth: 1.72,
+  //   svgStyle: {
+  //     width: "100%",
+  //     height: "100%",
+  //   },
+  //   step: (state, bar) => {
+  //     bar.setText(Math.round(bar.value() * 100) + " %");
+  //   },
+  // });
 
-  bar.animate(0.9);
+  // bar.animate(0.9);
 
-  var bar = new ProgressBar.Line(lineprog2, {
-    strokeWidth: 1.72,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 2900,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: "100%",
-      height: "100%",
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
-    },
-  });
+  // var bar = new ProgressBar.Line(lineprog2, {
+  //   strokeWidth: 1.72,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 2900,
+  //   trailWidth: 1.72,
+  //   svgStyle: {
+  //     width: "100%",
+  //     height: "100%",
+  //   },
+  //   step: (state, bar) => {
+  //     bar.setText(Math.round(bar.value() * 100) + " %");
+  //   },
+  // });
 
-  bar.animate(0.95);
+  // bar.animate(0.95);
 
-  var bar = new ProgressBar.Line(lineprog3, {
-    strokeWidth: 1.72,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 3000,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: "100%",
-      height: "100%",
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
-    },
-  });
+  // var bar = new ProgressBar.Line(lineprog3, {
+  //   strokeWidth: 1.72,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 3000,
+  //   trailWidth: 1.72,
+  //   svgStyle: {
+  //     width: "100%",
+  //     height: "100%",
+  //   },
+  //   step: (state, bar) => {
+  //     bar.setText(Math.round(bar.value() * 100) + " %");
+  //   },
+  // });
 
-  bar.animate(0.75);
+  // bar.animate(0.75);
 
-  var bar = new ProgressBar.Line(lineprog4, {
-    strokeWidth: 1.72,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 3100,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: "100%",
-      height: "100%",
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
-    },
-  });
+  // var bar = new ProgressBar.Line(lineprog4, {
+  //   strokeWidth: 1.72,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 3100,
+  //   trailWidth: 1.72,
+  //   svgStyle: {
+  //     width: "100%",
+  //     height: "100%",
+  //   },
+  //   step: (state, bar) => {
+  //     bar.setText(Math.round(bar.value() * 100) + " %");
+  //   },
+  // });
 
-  bar.animate(0.65);
+  // bar.animate(0.65);
 
-  var bar = new ProgressBar.Line(lineprog5, {
-    strokeWidth: 1.72,
-    easing: "easeInOut",
-    duration: 1400,
-    delay: 3200,
-    trailWidth: 1.72,
-    svgStyle: {
-      width: "100%",
-      height: "100%",
-    },
-    step: (state, bar) => {
-      bar.setText(Math.round(bar.value() * 100) + " %");
-    },
-  });
+  // var bar = new ProgressBar.Line(lineprog5, {
+  //   strokeWidth: 1.72,
+  //   easing: "easeInOut",
+  //   duration: 1400,
+  //   delay: 3200,
+  //   trailWidth: 1.72,
+  //   svgStyle: {
+  //     width: "100%",
+  //     height: "100%",
+  //   },
+  //   step: (state, bar) => {
+  //     bar.setText(Math.round(bar.value() * 100) + " %");
+  //   },
+  // });
 
-  bar.animate(0.85);
+  // bar.animate(0.85);
 
   // Contact form
   $(".art-input").keyup(function () {
@@ -447,6 +447,20 @@ $(function () {
       ).removeClass("art-active , art-disabled");
     }
   });
+// const hash = window.location.hash;
+// if (hash) {
+//   const target = document.querySelector(hash);
+//   const scrollbar = Scrollbar.get(document.querySelector("#scrollbar"));
+
+//   if (target && scrollbar) {
+//     setTimeout(() => {
+//       scrollbar.scrollIntoView(target, {
+//         offsetTop: 0,
+//         alignToTop: true,
+//       });
+//     }, 1000); // Give time for rendering
+//   }
+// }
 
   // reinit
   document.addEventListener("swup:contentReplaced", function () {
@@ -654,5 +668,33 @@ $(function () {
       }
     });
   });
-  
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    const targetId = this.getAttribute("href");
+
+    if (targetId && targetId.startsWith("#")) {
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        e.preventDefault();
+
+        // If you're using smooth-scrollbar.js
+        const scrollbar = Scrollbar.get(document.querySelector("#scrollbar"));
+        if (scrollbar) {
+          scrollbar.scrollIntoView(targetElement, {
+            offsetTop: 0,
+            alignToTop: true,
+          });
+        } else {
+          // fallback if scrollbar isn't initialized
+          targetElement.scrollIntoView({ behavior: "smooth" });
+        }
+
+        // Optionally update the URL hash manually
+        history.pushState(null, null, targetId);
+      }
+    }
+  });
+});
+
 });
