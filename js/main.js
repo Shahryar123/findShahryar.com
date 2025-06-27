@@ -323,25 +323,23 @@ $(function () {
   });
 
   // slider works
-  var swiper = new Swiper(".art-works-slider", {
+  var swiper = new Swiper(".art-certificate-slider", {
     slidesPerView: 3,
     spaceBetween: 30,
     speed: 1400,
-    autoplay: {
-      delay: 4000,
-    },
+    autoplay: false,
     autoplaySpeed: 5000,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".certificate-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".art-works-swiper-next",
-      prevEl: ".art-works-swiper-prev",
+      nextEl: ".art-certificate-swiper-next",
+      prevEl: ".art-certificate-swiper-prev",
     },
     breakpoints: {
       1500: {
-        slidesPerView: 2,
+        slidesPerView: 3,
       },
       1200: {
         slidesPerView: 2,
@@ -696,5 +694,7 @@ $(function () {
     }
   });
 });
+
+
 
 });
