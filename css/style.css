@@ -3789,4 +3789,47 @@ html.is-animating .fade-left {
   }
 }
 
+@media (max-width: 645px) {
+  .responsive-banner-title {
+    font-size: 28px !important;
+  }
+}
 
+@media (max-width: 991.98px) {
+  .p-30-0 {
+    padding-left: 10px !important;
+  }
+}
+@media (max-width: 767.98px) {
+  .art-counter-frame {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .gradient-heading-experience {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .art-counter-box {
+    justify-content: center;
+    display: flex;
+  }
+  /* Center the counters container and its children */
+  .p-30-0 {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .p-30-0 > .col-lg-4,
+  .p-30-0 > .col-md-6,
+  .p-30-0 > .col-12 {
+    width: 100% !important;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none !important;
+    display: flex;
+    justify-content: center;
+  }
+}
